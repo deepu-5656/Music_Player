@@ -43,22 +43,22 @@ If you don’t have XAMPP installed, you can download and install it by followin
 3. Start the MySQL service (this is the database server) by clicking on the "Start" button next to MySQL.  
 4. Both services should now be running. You can verify this by visiting http://localhost in your browser. If everything is set up correctly, you should see the XAMPP welcome page.
 
-### Step 3: Create the MySQL Database  
-1. Open your web browser and go to http://localhost/phpmyadmin/ to access the MySQL administration panel.  
-2. In the phpMyAdmin interface, click on the Databases tab.  
-3. In the “Create database” section, enter the name of the database, such as music_player, and click the "Create" button.  
-4. Now, click on the newly created music_player database to open it.  
-5. Create the Songs Table:
+### Step 3: Create the MySQL Database
+1. Open your web browser and go to http://localhost/phpmyadmin/ to access the MySQL administration panel.
+2. In the phpMyAdmin interface, click on the Databases tab.
+3. In the “Create database” section, enter the name of the database, such as music_player, and click the "Create" button.
+4. Now, click on the newly created music_player database to open it.
+5. **Create the Songs Table:**
 
-    In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
+In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
 
-    `CREATE TABLE songs (`
-    `id INT AUTO_INCREMENT PRIMARY KEY,`
-    `title VARCHAR(255) NOT NULL,`
-    `artist VARCHAR(255) NOT NULL,`
-    `album VARCHAR(255),`
-    `genre VARCHAR(50) NOT NULL`
-    `);`  
+CREATE TABLE songs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    artist VARCHAR(255) NOT NULL,
+    album VARCHAR(255),
+    genre VARCHAR(50) NOT NULL
+);
 
 Click the Go button to execute the query.  
 
