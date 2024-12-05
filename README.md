@@ -29,58 +29,49 @@ MySQL (or MariaDB)
 A web server (Apache, which is included in XAMPP)  
 A text editor (VSCode, Sublime Text, Notepad++, etc.)
 
-#### Step 1: Install XAMPP
+### Step 1: Install XAMPP
 If you don’t have XAMPP installed, you can download and install it by following these steps:
 
-i. Go to the XAMPP download page.  
-ii. Choose the version suitable for your operating system (Windows, macOS, or Linux) and download the installer.  
-iii. Run the installer and follow the setup instructions.  
-iv. Once installed, launch the XAMPP Control Panel.
+1. Go to the XAMPP download page.  
+2. Choose the version suitable for your operating system (Windows, macOS, or Linux) and download the installer.  
+3. Run the installer and follow the setup instructions.  
+4. Once installed, launch the XAMPP Control Panel.
 
-#### Step 2: Start Apache and MySQL Services  
-Open the XAMPP Control Panel.  
-Start the Apache service (this is the web server) by clicking on the "Start" button next to Apache.  
-Start the MySQL service (this is the database server) by clicking on the "Start" button next to MySQL.  
-Both services should now be running. You can verify this by visiting http://localhost in your browser. If everything is set up correctly, you should see the XAMPP welcome page.
+### Step 2: Start Apache and MySQL Services  
+1. Open the XAMPP Control Panel.  
+2. Start the Apache service (this is the web server) by clicking on the "Start" button next to Apache.  
+3. Start the MySQL service (this is the database server) by clicking on the "Start" button next to MySQL.  
+4. Both services should now be running. You can verify this by visiting http://localhost in your browser. If everything is set up correctly, you should see the XAMPP welcome page.
 
-Step 3: Create the MySQL Database
-Open your web browser and go to http://localhost/phpmyadmin/ to access the MySQL administration panel.
-
-In the phpMyAdmin interface, click on the Databases tab.
-
-In the “Create database” section, enter the name of the database, such as music_player, and click the "Create" button.
-
-Now, click on the newly created music_player database to open it.
-
-Create the Songs Table:
+### Step 3: Create the MySQL Database  
+1. Open your web browser and go to http://localhost/phpmyadmin/ to access the MySQL administration panel.  
+2. In the phpMyAdmin interface, click on the Databases tab.  
+3. In the “Create database” section, enter the name of the database, such as music_player, and click the "Create" button.  
+4. Now, click on the newly created music_player database to open it.  
+5. Create the Songs Table:
 
 In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
-sql
-Copy code
-CREATE TABLE songs (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    artist VARCHAR(255) NOT NULL,
-    album VARCHAR(255),
-    genre VARCHAR(50) NOT NULL
-);
-Click the Go button to execute the query.
+
+`CREATE TABLE songs (`
+    `id INT AUTO_INCREMENT PRIMARY KEY,`
+    `title VARCHAR(255) NOT NULL,`
+    `artist VARCHAR(255) NOT NULL,`
+    `album VARCHAR(255),`
+    `genre VARCHAR(50) NOT NULL`
+`);`  
+Click the Go button to execute the query.  
 This will create a table called songs with the following columns:
 
-id: Auto-increment primary key for the song (unique identifier)
-title: The title of the song
-artist: The artist of the song
-album: The album name (optional)
-genre: The genre of the song (required)
-Step 4: Place the Project Files in the Correct Directory
-Open the XAMPP Control Panel and find the Apache module.
+**id:** Auto-increment primary key for the song (unique identifier)  
+**title:** The title of the song  
+**artist:** The artist of the song  
+**album:** The album name (optional)  
+**genre:** The genre of the song (required)  
 
-Click on the Explore button next to Apache to open the folder where XAMPP is installed.
-
-Inside the XAMPP folder, navigate to the htdocs directory. This is the folder where all your web projects should reside. The default path will likely be something like:
-
-makefile
-Copy code
+### Step 4: Place the Project Files in the Correct Directory  
+1. Open the XAMPP Control Panel and find the Apache module.  
+2. Click on the Explore button next to Apache to open the folder where XAMPP is installed.  
+3. Inside the XAMPP folder, navigate to the htdocs directory. This is the folder where all your web projects should reside. The default path will likely be something like:  
 C:\xampp\htdocs\
 Copy the entire project folder (which contains index.html, list_songs.php, add_song.php, styles.css, and the README.md) into the htdocs directory.
 
