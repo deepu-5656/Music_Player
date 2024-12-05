@@ -13,34 +13,36 @@ The project uses HTML, CSS, PHP, and MySQL to manage song data.
 **Database Integration:** Song details are stored in a MySQL database.
 
 ## Project Structure
-bash
-Copy code
-/music-player-web
+
+/music-player-web  
 index.html           # Add Song page (form to submit song details)  
 list_songs.php       # List Songs page (displays all added songs)  
 add_song.php         # PHP script to handle form submission and insert data into the database  
 styles.css           # CSS file for styling the pages  
 README.md            # This README file
 
-Prerequisites
+## Prerequisites  
 Before starting the project, you need to ensure that the following software is installed on your computer:
 
-PHP (Version 7 or higher)
-MySQL (or MariaDB)
-A web server (Apache, which is included in XAMPP)
+PHP (Version 7 or higher)  
+MySQL (or MariaDB)  
+A web server (Apache, which is included in XAMPP)  
 A text editor (VSCode, Sublime Text, Notepad++, etc.)
-Step 1: Install XAMPP
+
+#### Step 1: Install XAMPP
 If you don’t have XAMPP installed, you can download and install it by following these steps:
 
-Go to the XAMPP download page.
-Choose the version suitable for your operating system (Windows, macOS, or Linux) and download the installer.
-Run the installer and follow the setup instructions.
+Go to the XAMPP download page.  
+Choose the version suitable for your operating system (Windows, macOS, or Linux) and download the installer.  
+Run the installer and follow the setup instructions.  
 Once installed, launch the XAMPP Control Panel.
-Step 2: Start Apache and MySQL Services
-Open the XAMPP Control Panel.
-Start the Apache service (this is the web server) by clicking on the "Start" button next to Apache.
-Start the MySQL service (this is the database server) by clicking on the "Start" button next to MySQL.
+
+#### Step 2: Start Apache and MySQL Services  
+Open the XAMPP Control Panel.  
+Start the Apache service (this is the web server) by clicking on the "Start" button next to Apache.  
+Start the MySQL service (this is the database server) by clicking on the "Start" button next to MySQL.  
 Both services should now be running. You can verify this by visiting http://localhost in your browser. If everything is set up correctly, you should see the XAMPP welcome page.
+
 Step 3: Create the MySQL Database
 Open your web browser and go to http://localhost/phpmyadmin/ to access the MySQL administration panel.
 
