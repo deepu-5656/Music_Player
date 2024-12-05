@@ -50,24 +50,24 @@ If you don’t have XAMPP installed, you can download and install it by followin
 4. Now, click on the newly created music_player database to open it.
 5. **Create the Songs Table:**
 
-In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
+- In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
 
-CREATE TABLE songs (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    artist VARCHAR(255) NOT NULL,
-    album VARCHAR(255),
-    genre VARCHAR(50) NOT NULL
-);
+   `CREATE TABLE songs (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        title VARCHAR(255) NOT NULL,
+        artist VARCHAR(255) NOT NULL,
+        album VARCHAR(255),
+        genre VARCHAR(50) NOT NULL
+   `
 
-Click the Go button to execute the query.  
+- Click the Go button to execute the query.  
 
 This will create a table called songs with the following columns:  
-**id:** Auto-increment primary key for the song (unique identifier)  
-**title:** The title of the song  
-**artist:** The artist of the song  
-**album:** The album name (optional)  
-**genre:** The genre of the song (required)  
+- **id:** Auto-increment primary key for the song (unique identifier)  
+- **title:** The title of the song  
+- **artist:** The artist of the song  
+- **album:** The album name (optional)  
+- **genre:** The genre of the song (required)  
 
 ### Step 4: Place the Project Files in the Correct Directory  
 1. Open the XAMPP Control Panel and find the Apache module.
