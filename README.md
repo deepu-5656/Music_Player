@@ -50,18 +50,19 @@ If you don’t have XAMPP installed, you can download and install it by followin
 4. Now, click on the newly created music_player database to open it.  
 5. Create the Songs Table:
 
-In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
+    In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
 
-`CREATE TABLE songs (`
+    `CREATE TABLE songs (`
     `id INT AUTO_INCREMENT PRIMARY KEY,`
     `title VARCHAR(255) NOT NULL,`
     `artist VARCHAR(255) NOT NULL,`
     `album VARCHAR(255),`
     `genre VARCHAR(50) NOT NULL`
-`);`  
-Click the Go button to execute the query.  
-This will create a table called songs with the following columns:
+    `);`  
 
+Click the Go button to execute the query.  
+
+This will create a table called songs with the following columns:  
 **id:** Auto-increment primary key for the song (unique identifier)  
 **title:** The title of the song  
 **artist:** The artist of the song  
@@ -69,18 +70,18 @@ This will create a table called songs with the following columns:
 **genre:** The genre of the song (required)  
 
 ### Step 4: Place the Project Files in the Correct Directory  
-1. Open the XAMPP Control Panel and find the Apache module.  
-2. Click on the Explore button next to Apache to open the folder where XAMPP is installed.  
+1. Open the XAMPP Control Panel and find the Apache module.
+2. Click on the Explore button next to Apache to open the folder where XAMPP is installed.
 3. Inside the XAMPP folder, navigate to the htdocs directory. This is the folder where all your web projects should reside. The default path will likely be something like:  
 C:\xampp\htdocs\
-Copy the entire project folder (which contains index.html, list_songs.php, add_song.php, styles.css, and the README.md) into the htdocs directory.
+4. Copy the entire project folder (which contains index.html, list_songs.php, add_song.php, styles.css, and the README.md) into the htdocs directory.
 
 For example, you can place the project in:
 
-makefile
-Copy code
 C:\xampp\htdocs\music-player-web
-Step 5: Modify Database Connection in PHP Files
+
+### Step 5: Modify Database Connection in PHP Files
+
 In the add_song.php and list_songs.php files, the database connection is established using the following PHP code:
 
 php
