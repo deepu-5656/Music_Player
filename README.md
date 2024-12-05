@@ -32,10 +32,10 @@ A text editor (VSCode, Sublime Text, Notepad++, etc.)
 #### Step 1: Install XAMPP
 If you don’t have XAMPP installed, you can download and install it by following these steps:
 
-Go to the XAMPP download page.  
-Choose the version suitable for your operating system (Windows, macOS, or Linux) and download the installer.  
-Run the installer and follow the setup instructions.  
-Once installed, launch the XAMPP Control Panel.
+i. Go to the XAMPP download page.  
+ii. Choose the version suitable for your operating system (Windows, macOS, or Linux) and download the installer.  
+iii. Run the installer and follow the setup instructions.  
+iv. Once installed, launch the XAMPP Control Panel.
 
 #### Step 2: Start Apache and MySQL Services  
 Open the XAMPP Control Panel.  
