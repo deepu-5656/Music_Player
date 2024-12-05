@@ -7,27 +7,27 @@ This is a simple web application that allows users to add and view songs. The pr
 The project uses HTML, CSS, PHP, and MySQL to manage song data.
 
 ## Features
-**Add Song:** Users can submit details of a song (Title, Artist, Album, Genre) via a form.  
-**List Songs:** All added songs are displayed in a table format, including song title, artist name, album (if provided), and genre.  
-**Responsive Layout:** The design is responsive and works well on both desktop and mobile devices.  
-**Database Integration:** Song details are stored in a MySQL database.
+- **Add Song:** Users can submit details of a song (Title, Artist, Album, Genre) via a form.  
+- **List Songs:** All added songs are displayed in a table format, including song title, artist name, album (if provided), and genre.  
+- **Responsive Layout:** The design is responsive and works well on both desktop and mobile devices.  
+- **Database Integration:** Song details are stored in a MySQL database.
 
 ## Project Structure
 
-/music-player-web  
-index.html           # Add Song page (form to submit song details)  
-list_songs.php       # List Songs page (displays all added songs)  
-add_song.php         # PHP script to handle form submission and insert data into the database  
-styles.css           # CSS file for styling the pages  
-README.md            # This README file
+music_player  
+* index.html           # Add Song page (form to submit song details)  
+* list_songs.php       # List Songs page (displays all added songs)  
+* add_song.php         # PHP script to handle form submission and insert data into the database  
+* styles.css           # CSS file for styling the pages  
+* README.md            # This README file
 
 ## Prerequisites  
 Before starting the project, you need to ensure that the following software is installed on your computer:
 
-PHP (Version 7 or higher)  
-MySQL (or MariaDB)  
-A web server (Apache, which is included in XAMPP)  
-A text editor (VSCode, Sublime Text, Notepad++, etc.)
+- PHP (Version 7 or higher)  
+- MySQL (or MariaDB)  
+- A web server (Apache, which is included in XAMPP)  
+- A text editor (VSCode, Sublime Text, Notepad++, etc.)
 
 ### Step 1: Install XAMPP
 If you don’t have XAMPP installed, you can download and install it by following these steps:
@@ -52,13 +52,15 @@ If you don’t have XAMPP installed, you can download and install it by followin
 
 - In the SQL tab of phpMyAdmin, enter the following SQL code to create the table that will store the song details:
 
-   `CREATE TABLE songs (
+   ```
+   CREATE TABLE songs (
         id INT AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(255) NOT NULL,
         artist VARCHAR(255) NOT NULL,
         album VARCHAR(255),
         genre VARCHAR(50) NOT NULL
-   `
+   );
+   ```
 
 - Click the Go button to execute the query.  
 
@@ -72,44 +74,48 @@ This will create a table called songs with the following columns:
 ### Step 4: Place the Project Files in the Correct Directory  
 1. Open the XAMPP Control Panel and find the Apache module.
 2. Click on the Explore button next to Apache to open the folder where XAMPP is installed.
-3. Inside the XAMPP folder, navigate to the htdocs directory. This is the folder where all your web projects should reside. The default path will likely be something like:  
-C:\xampp\htdocs\
-4. Copy the entire project folder (which contains index.html, list_songs.php, add_song.php, styles.css, and the README.md) into the htdocs directory.
+3. Inside the XAMPP folder, navigate to the htdocs directory. This is the folder where all your web projects should reside. The default path will likely be something like:
+    ```
+        C:\xampp\htdocs\
+    ```
+5. Copy the entire project folder (which contains index.html, list_songs.php, add_song.php, styles.css, and the README.md) into the htdocs directory.
 
-For example, you can place the project in:
-
-C:\xampp\htdocs\music-player-web
+* For example, you can place the project in:  
+   ```
+       C:\xampp\htdocs\music_player
+   ```
 
 ### Step 5: Modify Database Connection in PHP Files
 
 In the add_song.php and list_songs.php files, the database connection is established using the following PHP code:
 
-php
-Copy code
+```
 $servername = "localhost";
 $username = "root"; // Default MySQL username
 $password = ""; // Default MySQL password (empty in XAMPP)
 $dbname = "music_player"; // Name of the database
-Ensure the following:
+```
+Ensure the following:  
+- **localhost:** This is the correct host for the local MySQL server.
+- **root:** This is the default MySQL username in XAMPP.
+- **"":** The default password is empty in XAMPP.
+- **music_player:** This should match the name of the database you created earlier.
 
-localhost: This is the correct host for the local MySQL server.
-root: This is the default MySQL username in XAMPP.
-"": The default password is empty in XAMPP.
-music_player: This should match the name of the database you created earlier.
 No further changes are needed unless you’ve modified your MySQL username/password.
 
-Step 6: Access the Application
-Open your web browser and visit the Add Song Page by navigating to:
+### Step 6: Access the Application
+1. Open your web browser and visit the Add Song Page by navigating to:
 
-arduino
-Copy code
-http://localhost/music-player-web/index.html
-This page allows users to input the song title, artist, album (optional), and genre, then submit the form.
-After adding a song, the data will be stored in the MySQL database. To view the list of added songs, visit the List Songs Page by navigating to:
 
-arduino
-Copy code
-http://localhost/music-player-web/list_songs.php
+    http://localhost/music-player-web/index.html
+
+
+- This page allows users to input the song title, artist, album (optional), and genre, then submit the form.  
+2. After adding a song, the data will be stored in the MySQL database. To view the list of added songs, visit the List Songs Page by navigating to:
+
+
+    http://localhost/music-player-web/list_songs.php
+
 This page will display all songs added to the database in a table format, including the song title, artist, album (if provided), and genre.
 
 There is also a "Go Back to Add Song" button at the top of the page to return to the Add Song page.
