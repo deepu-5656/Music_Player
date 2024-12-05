@@ -80,7 +80,7 @@ This will create a table called songs with the following columns:
     ```
 5. Copy the entire project folder (which contains index.html, list_songs.php, add_song.php, styles.css, and the README.md) into the htdocs directory.
 
-* For example, you can place the project in:  
+   * For example, you can place the project in:  
    ```
        C:\xampp\htdocs\music_player
    ```
@@ -110,37 +110,37 @@ No further changes are needed unless you’ve modified your MySQL username/passw
     http://localhost/music-player-web/index.html
 
 
-- This page allows users to input the song title, artist, album (optional), and genre, then submit the form.  
+   - This page allows users to input the song title, artist, album (optional), and genre, then submit the form.  
 2. After adding a song, the data will be stored in the MySQL database. To view the list of added songs, visit the List Songs Page by navigating to:
 
 
     http://localhost/music-player-web/list_songs.php
 
-This page will display all songs added to the database in a table format, including the song title, artist, album (if provided), and genre.
+   - This page will display all songs added to the database in a table format, including the song title, artist, album (if provided), and genre.
+   - There is also a "Go Back to Add Song" button at the top of the page to return to the Add Song page.
 
-There is also a "Go Back to Add Song" button at the top of the page to return to the Add Song page.
+### Step 7: Testing the Application
 
-Step 7: Testing the Application
-Once the server is running and the project files are correctly placed in the htdocs directory, you can test the project by performing the following:
+Once the server is running and the project files are correctly placed in the htdocs directory, you can test the project by performing the following:  
+1. Add Songs:
+   - Go to the Add Song Page (index.html).
+   - Fill in the form and click "Add Song" to add a song.
+   - After adding a song, you will be redirected to the List Songs Page.
+2. View Songs:
+   - Visit the List Songs Page (list_songs.php) to view all added songs.
+   - The songs are displayed in a table, and you can go back to the Add Song page by clicking the "Go Back to Add Song" button.
 
-Add Songs:
+### Step 8: Shutting Down the Server
 
-Go to the Add Song Page (index.html).
-Fill in the form and click "Add Song" to add a song.
-After adding a song, you will be redirected to the List Songs Page.
-View Songs:
-
-Visit the List Songs Page (list_songs.php) to view all added songs.
-The songs are displayed in a table, and you can go back to the Add Song page by clicking the "Go Back to Add Song" button.
-Step 8: Shutting Down the Server
 When you're done, you can stop the server by going back to the XAMPP Control Panel and clicking the "Stop" button next to Apache and MySQL.
 
 This will shut down the local server and stop the web application.
 
-Troubleshooting
-Error: “Connection failed”: If you see a connection error in the browser, make sure the Apache and MySQL services are running in the XAMPP Control Panel.
-Database issues: Double-check that the music_player database exists and that the songs table has been created correctly.
-Conclusion
+## Troubleshooting
+- **Error: “Connection failed”:** If you see a connection error in the browser, make sure the Apache and MySQL services are running in the **XAMPP Control Panel.**  
+- **Database issues:** Double-check that the music_player database exists and that the songs table has been created correctly.
+
+## Conclusion  
 With these steps, you can easily run the Music Player Web Application on your local machine using XAMPP. This application provides a basic framework for adding and viewing songs in a simple PHP-based web app with a MySQL backend. You can expand it further by adding additional features such as song playback, user authentication, or more advanced song management functionality.
 
 
