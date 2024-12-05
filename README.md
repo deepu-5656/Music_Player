@@ -1,31 +1,27 @@
 # Music Player Web Application
 This is a simple web application that allows users to add and view songs. The project consists of two main pages:
 
-**Add Song Page:** A form where users can input song details (title, artist, album, and genre).
-
+**Add Song Page:** A form where users can input song details (title, artist, album, and genre).  
 **List Songs Page:** A page displaying all the added songs in a tabular format.
 
 The project uses HTML, CSS, PHP, and MySQL to manage song data.
 
 ## Features
-**Add Song:** Users can submit details of a song (Title, Artist, Album, Genre) via a form.
+**Add Song:** Users can submit details of a song (Title, Artist, Album, Genre) via a form.  
+**List Songs:** All added songs are displayed in a table format, including song title, artist name, album (if provided), and genre.  
+**Responsive Layout:** The design is responsive and works well on both desktop and mobile devices.  
+**Database Integration:** Song details are stored in a MySQL database.
 
-**List Songs:** All added songs are displayed in a table format, including song title, artist name, album (if provided), and genre.
-
-Responsive Layout: The design is responsive and works well on both desktop and mobile devices.
-
-Database Integration: Song details are stored in a MySQL database.
-
-Project Structure
+## Project Structure
 bash
 Copy code
 /music-player-web
-│
-├── index.html           # Add Song page (form to submit song details)
-├── list_songs.php       # List Songs page (displays all added songs)
-├── add_song.php         # PHP script to handle form submission and insert data into the database
-├── styles.css           # CSS file for styling the pages
-├── README.md            # This README file
+index.html           # Add Song page (form to submit song details)  
+list_songs.php       # List Songs page (displays all added songs)  
+add_song.php         # PHP script to handle form submission and insert data into the database  
+styles.css           # CSS file for styling the pages  
+README.md            # This README file
+
 Prerequisites
 Before starting the project, you need to ensure that the following software is installed on your computer:
 
