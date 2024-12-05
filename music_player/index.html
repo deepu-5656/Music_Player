@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Song</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Song</h1>
+        <form action="add_song.php" method="POST">
+            <label for="title">Song Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="artist">Artist Name:</label>
+            <input type="text" id="artist" name="artist" required><br><br>
+
+            <label for="album">Album Name (Optional):</label>
+            <input type="text" id="album" name="album"><br><br>
+
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre">
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Classical">Classical</option>
+            </select><br><br>
+
+            <input type="submit" value="Add Song">
+        </form>
+
+        <br>
+        <!-- Button to View List of Songs -->
+        <a href="list_songs.php"><button class="view-list-btn">View List of Songs</button></a>
+    </div>
+</body>
+</html>
