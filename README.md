@@ -145,6 +145,6 @@ With these steps, you can easily run the Music Player Web Application on your lo
 
 
 
-![Screenshot 2024-12-05 131421](https://github.com/user-attachments/assets/38d80ed7-ae12-43dd-9498-1dd7c3603d7b)
-![Screenshot 2024-12-05 131212](https://github.com/user-attachments/assets/15ce14a3-5018-48bf-b1e1-e16f93b53b94)
-![Screenshot 2024-12-05 131158](https://github.com/user-attachments/assets/3294d462-bb56-4fe6-b8ed-7aa35809eb4a)
+![Screenshot 2024-12-05 131212](https://github.com/user-attachments/assets/9cdaa5df-7a3f-4cf4-8461-33b86ea368e5)
+![Screenshot 2024-12-05 131859](https://github.com/user-attachments/assets/a9bab91b-2b55-4f6e-9053-d7b844991ef5)
+![Screenshot 2024-12-05 131421](https://github.com/user-attachments/assets/8ddf495a-3ec4-46c4-815d-e867039f9533)
